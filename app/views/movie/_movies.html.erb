@@ -1,0 +1,21 @@
+<div class="container">
+  <div id="home" class="row row-cols-1 row-cols-md-6 g-4 justify-content-center">
+    <% movies.each do |movie| %>
+      <div class="col-md-8 col-lg-4 col-sm-12">
+        <%= link_to movie do %>
+          <div class="card align-items-center">
+            <%= image_tag(movie.poster, :alt => movie.title, class: "card-img-top") %>
+            <div class="card-body">
+              <h5 class="card-title">
+                <%= movie.title %>
+              </h5>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <br/>
+  <%== pagy_bootstrap_nav(pagy) %>
+</div>

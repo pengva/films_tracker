@@ -1,0 +1,10 @@
+<% if movie.errors.any? %>
+  <div id="error_explanation" data-turbo-cache="false" class="alert alert-danger">
+    <h2><%= pluralize(movie.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+    <% movie.errors.each do |error| %>
+      <h6><%= error.full_message %></h6>
+    <% end %>
+
+  </div>
+<% end %>
