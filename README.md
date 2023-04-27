@@ -1,24 +1,13 @@
-# README
+**ENV** - **config/local_env.yml**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+GMAIL_PASSWORD: 
+GMAIL_USERNAME: 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+POSTGRES_DB: 
+POSTGRES_HOST: 
+POSTGRES_PASSWORD: 
+POSTGRES_PORT: 
+POSTGRES_USERNAME: 
+HOST:
+```
